@@ -1,0 +1,20 @@
+{
+  "name": "inception-backbone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://stash.etermax.com/scm/comweb/inception-backbone.git"
+  },
+  "author": "agustin.rodriguez",
+  "license": "ISC",
+  "devDependencies": {
+    "backbone.marionette": "^2.4.5",
+    "bootstrap-sass": "^3.3.6",
+    "webpack": "^1.13.0"
+  }
+}
