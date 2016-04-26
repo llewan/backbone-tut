@@ -15,6 +15,7 @@ Ejercicio para practicar el uso de [Backbone](http://backbonejs.org/) y [Backbon
 4. El ejercicio consiste en armar una mini app que interactue con la API de Preguntados y se muestren 2 pantallas:
   a. Pantalla de Registro de usuario.
   b. Pantalla de Dashboard
+5. Realizar un **pull request** a ``master`` con la resolución.
 
 ### Funcionamiento
 
