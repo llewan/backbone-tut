@@ -5,14 +5,20 @@ Ejercicio para practicar el uso de [Backbone](http://backbonejs.org/) y [Backbon
 ## Documentación
 
 * [Oficial de Backbone](http://backbonejs.org/)
-* [Overview general de Gulp](https://www.smashingmagazine.com/2014/06/building-with-gulp/)
-* [Documentación oficial de Gulp﻿](https://github.com/gulpjs/gulp)
-    * [Getting Started with Gulp﻿](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
-    * [Gulp API﻿﻿﻿](https://github.com/gulpjs/gulp/blob/master/docs/API.md)
+* [Oficial de Marionette](http://marionettejs.com/)
 
 ## Ejercicio
 
-1. Instalar dependencias con ``npm install``.
-2. Copiar el archivo src/index.html a dist/index.html.
-3. Compilar SASS. Implementar una tarea que tome el archivo src/styles/custom-bootstrap.scss y lo compile a CSS dejándolo en dist/styles/styles.css
-4. Concat, lint y uglify del JS. Concatenar los archivos JS de ``bootstrap-sass`` (bootstrap-sass/assets/javascript/bootstrap) junto con el archivo src/javascripts/app.js, ejecutarle el JSHint (instalar dependencia), pasarle un uglify y finalmente alojarlo en dist/javascripts/app.min.js
+1. Forkear y clonar el repositorio localmente.
+2. Crear un **branch** desde ``master``. El nombre podría ser el id del ticket de JIRA.
+3. Instalar dependencias con ``npm install``.
+4. El ejercicio consiste en armar una mini app que interactue con la API de Preguntados y se muestren 2 pantallas:
+  a. Pantalla de Registro de usuario.
+  b. Pantalla de Dashboard
+
+### Funcionamiento
+
+* La pantalla del registro de usuario debe crear un usuario usando este [recurso de API](http://confluence.etermax.com/confluence/pages/viewpage.action?pageId=12059865). Usar un formulario en el que pida usuario, email y contraseña.
+* Dado el registro exitoso exitoso se debe mostrar la pantalla de Dashboard usando este [recurso de API](http://confluence.etermax.com/confluence/pages/viewpage.action?pageId=18090247). Se debe mostrar la lista de juegos, vidas, monedas, tiros extra, mensajes.
+* Se deben crear los modelos y las vistas y/o layouts necesarios.
+
