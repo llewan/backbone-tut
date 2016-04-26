@@ -20,6 +20,6 @@ Ejercicio para practicar el uso de [Backbone](http://backbonejs.org/) y [Backbon
 ### Funcionamiento
 
 * La pantalla del registro de usuario debe crear un usuario usando este [recurso de API](http://confluence.etermax.com/confluence/pages/viewpage.action?pageId=12059865). Usar un formulario en el que pida usuario, email y contraseña.
-* Dado el registro exitoso exitoso se debe mostrar la pantalla de Dashboard usando este [recurso de API](http://confluence.etermax.com/confluence/pages/viewpage.action?pageId=18090247). Se debe mostrar la lista de juegos, vidas, monedas, tiros extra, mensajes.
+* Dado el registro exitoso se debe mostrar la pantalla de Dashboard usando este [recurso de API](http://confluence.etermax.com/confluence/pages/viewpage.action?pageId=18090247). Se debe mostrar la lista de juegos, vidas, monedas, tiros extra, mensajes.
 * Se deben crear los modelos y las vistas y/o layouts necesarios.
 
