@@ -1,41 +1,23 @@
-var path = require('path'),
-    webpack = require('webpack');
-
+var webpack = require('webpack');
+ 
 module.exports = {
-  context: './src/javascripts/',
-
-  entry: {
-    app: 'initialize'
-  },
-
+  context: './src/javascripts', 
+  entry: ['./main.js'],
   output: {
-    path: './dist/app.js'
+    filename: './dist/bundle.js'       
   },
-
-  devtool: '#eval',
-
-  resolve: {
-    root: [
-      path.resolve('./src/javascripts/'),
-      path.resolve('./src/styles/')
-    ],
-    extensions: ['', '.js']
-  },
-
   module: {
     loaders: [
-      { test: /\.less$/, loader: 'style!css!less' }
+      { test: /\.less$/, loader: 'style!css!less' },
+      { test: /\.css$/, loader: "style-loader!css-loader" },
+      { test: /\.png$/, loader: "url-loader?mimetype=image/png" },
     ]
   },
-
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      jquery: 'jquery',
-      'window.jQuery': 'jquery',
-      _: 'underscore',
+  plugins : [ new webpack.ProvidePlugin({
+      $ : "jquery",
+      jquery : "jquery",
+      Backbone : "backbone",
+      _ : "underscore",
       'Marionette': 'backbone.marionette'
-    })
-  ]
+  }) ]
 };
